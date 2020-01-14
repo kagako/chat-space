@@ -2,8 +2,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|references|index: true, foreign_key: true, null: false|
-|group_id|references|index: true, foreign_key: true, null: false|
+|user_id|references|foreign_key: true, null: false|
+|group_id|references|foreign_key: true, null: false|
 
 ### Association
 - belongs_to :group
