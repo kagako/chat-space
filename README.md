@@ -36,8 +36,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
-|image|string|null: false|
+|text|text|
+|image|string|
 |group|references|foreign_key: true|
 |user|references|foreign_key: true|
 
