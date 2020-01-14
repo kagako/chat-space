@@ -19,7 +19,7 @@
 ### Association
 - has_many :groups, through: :group_users
 - has_many :group_users
-- has_many :chat
+- has_many :chats
 
 ## groups テーブル
 
@@ -30,14 +30,14 @@
 ### Association
 - has_many :users, through: :group_users
 - has_many :group_users
-- has_many :chat
+- has_many :chats
 
 ## chats テーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|text|text|
-|image|string|
+|text|text|null: false|
+|image|string|null: false|
 |group|references|foreign_key: true|
 |user|references|foreign_key: true|
 
